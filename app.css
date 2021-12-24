@@ -1,0 +1,142 @@
+body {
+	background: hsl(217, 54%, 11%);
+	color: white;
+	font-family: 'Outfit', sans-serif;
+}
+
+.bg {
+	display: flex;
+	width: 20%;
+	height: 500px;
+	margin: 100px auto;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background: hsl(216, 50%, 16%);
+	border-radius: 10px;
+	flex-shrink: 1;
+	flex-wrap: wrap;
+}
+
+.image {
+	display: flex;
+}
+
+.image img {
+	border-radius: 10px;
+	position: relative;
+}
+
+.content {
+	margin: 22px 22px;
+}
+
+.title {
+	padding: 15px 0px;
+	font-weight: 600;
+	font-size: 1.2em;
+	transition: all 0.5s ease-in-out;
+}
+
+.overlay {
+	display: flex;
+	opacity: 0;
+	position: absolute;
+	width: 260px;
+	height: 240px;
+	top: 17%;
+	border-radius: 10px;
+	background: url(icon-view.svg), cyan;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.image:hover .overlay {
+	display: block;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: all 0.5s ease-in-out;
+}
+
+.title:hover,
+.title:active,
+#name:hover,
+#name:active {
+	color: cyan;
+	cursor: pointer;
+}
+
+.para {
+	padding: 4px 0px;
+	font-weight: 300;
+	color: hsl(215, 51%, 70%);
+	font-size: 1em;
+}
+
+.value-and-time {
+	display: flex;
+	padding: 20px 0px;
+	justify-content: space-between;
+	text-align: center;
+	font-size: 0.88em;
+	border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.eth,
+.clock {
+	display: flex;
+	flex-direction: row;
+}
+
+.eth {
+	font-weight: 600;
+}
+
+.clock {
+	font-weight: 300;
+}
+
+span {
+	margin: 0px 3px;
+}
+
+#name {
+	transition: all 0.5s ease-in-out;
+}
+
+.creation {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 20px 0px;
+	text-align: left;
+	font-weight: 300;
+	font-size: 0.88em;
+}
+
+.creation img {
+	border: 0.5px solid white;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+#creation-text {
+	color: hsl(215, 51%, 70%);
+}
+
+@media (min-width: 375px) and (max-width: 1440px) {
+	.bg {
+		width: 300px;
+		height: 500px;
+	}
+}
+
+footer {
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	color: cyan;
+}
